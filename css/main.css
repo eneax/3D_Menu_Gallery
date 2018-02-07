@@ -2,22 +2,22 @@
   Base Element Styles
 ==================================== */
 
-* {
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+
 body {
 	font: 1em/1.5 'Open Sans', sans-serif;
 	color: #373737;
 	background: #F5795D;
 	margin: 2.5em 0;
 }
-a {
-	text-decoration: none;
-}
+
+a { text-decoration: none; }
+
 h1,
 h3 {
 	text-transform: uppercase;
 }
+
 h1 {
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -32,12 +32,14 @@ h1 {
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
+
 h3 {
 	font-size: 1.3em;
 	line-height: 1.25em;
 	margin-top: 0;
 	margin-bottom: .5em;
 }
+
 p {
 	font-size: .875em;
 	line-height: 1.4;
@@ -55,10 +57,12 @@ p {
 	background: #fff;
 	margin: auto;
 }
+
 .main-header {
 	text-align: center;
 	padding: 2.8em 0;
 }
+
 .photo-container {
 	text-align: center;
 	margin-bottom: 2.5em;
@@ -71,31 +75,34 @@ p {
 	margin: 0 0 1.5em;
 	line-height: 1;
 }
+
 .name:hover {
 	transform: scale(1.5);
 	text-shadow: 20px 20px 10px rgba(0,0,0,.5);
 	transition: .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .name span {
 	font-weight: 300;
 	margin-left: -7px;
 }
-img {
-	transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+
+img { transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
 .logo {
 	width: 45px;
 	margin-bottom: .4em;
 	cursor: pointer;
 }
-.logo:hover {
-	transform: rotate(-360deg) scale(1.5);
-}
+
+.logo:hover { transform: rotate(-360deg) scale(1.5); }
+
 .photo-container img {
  	max-width: 100%;
  	position: relative;
 	z-index: 100;
 }
+
 .photo {
 	position: relative;
 	line-height: 0;
@@ -126,18 +133,17 @@ footer {
   clear: both;
   padding-top: 50px;
 }
+
 .social-icon {
   width: 25px;
   height: 25px;
   margin: 0 5px;
 	border-radius: 50%;
 }
-.social-icon:hover {
-	transform: rotate(-360deg) scale(1.5);
-}
-#copy {
-	display: block;
-}
+
+.social-icon:hover { transform: rotate(-360deg) scale(1.5); }
+
+#copy { display: block; }
 
 /* ---- Float clearfix ---- */
 .clearfix::after {
@@ -152,21 +158,23 @@ footer {
   Photo 3D Transforms & Transitions
 ==================================== */
 
-.photo-container {
-	perspective: 700px;
-}
+.photo-container { perspective: 700px; }
+
 .photo {
 	transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
 	transform-style: preserve-3d;
 }
+
 .photo img,
 .photo2 img {
 	transform-origin: 50% 100%;
 }
+
 .photo:hover img,
 .photo2:hover img {
 	transform: scale(1.2);
 }
+
 .side-a,
 .side-b,
 .side-2a,
@@ -175,20 +183,14 @@ footer {
 }
 
 /* First Row */
-.photo:hover {
-	transform: rotate3d(0, 1, 0, 180deg);
-}
-.side-b {
-	transform: rotate3d(0, 1, 0, 180deg);
-}
+.photo:hover { transform: rotate3d(0, 1, 0, 180deg); }
+
+.side-b { transform: rotate3d(0, 1, 0, 180deg); }
 
 /* Second Row */
-.photo2:hover {
-	transform: rotate3d(1, 0, 0, 180deg);
-}
-.side-2b {
-	transform: rotate3d(1, 0, 0, 180deg);
-}
+.photo2:hover { transform: rotate3d(1, 0, 0, 180deg); }
+
+.side-2b { transform: rotate3d(1, 0, 0, 180deg); }
 
 
 
@@ -197,20 +199,19 @@ footer {
 ==================================== */
 
 @media (min-width: 0) and (max-width: 768px) {
-	.container {
-		padding: 0 1.225em 2.5em;
-	}
+	.container { padding: 0 1.225em 2.5em; }
 }
+
 @media (min-width: 769px) {
-	.container {
-		padding: 0 2.25em 3em;
-	}
+	.container { padding: 0 2.25em 3em; }
+	
 	.photo-container {
 		width: 48%;
 		float: left;
 		margin-left: 4%;
 	}
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
 	.photo-container:nth-child(2n+1) {
 		margin-left: 0;
@@ -218,9 +219,8 @@ footer {
 	}
 }
 @media (min-width: 1025px) {
-	.photo-container {
-		width: 30.63973064%;
-	}
+	.photo-container { width: 30.63973064%; }
+	
 	.photo-container:nth-child(3n+1) {
 		margin-left: 0;
 		clear: left;
